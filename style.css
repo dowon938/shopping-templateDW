@@ -23,6 +23,14 @@ button{
   cursor: pointer;
   padding: 0;
 }
+::-webkit-scrollbar{
+  width: 6px;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: dimgray;
+  border-radius: 4px;
+}
 
 
 
@@ -35,7 +43,11 @@ button{
   display: flex;
   margin: auto;
 }
-.categories__clothes button{
+.clothes__t-shirts{
+  margin-right: 14px;
+}
+.clothes__pants,
+.clothes__skirts{
   margin: 0px 14px;
 }
 .categories__clothes{
@@ -65,13 +77,14 @@ button{
 .item-window{
   background-color: rgb(1, 1, 1, 0.1);
   border-radius: 6px;
-  width: 400px;
-  height: 500px;
+  width: 380px;
+  height: 460px;
   margin: auto;
   margin-top: 36px;
   overflow: auto;
   display: flex;
   flex-flow: column;
+  
 }
 .item-window div {
   display: flex;
