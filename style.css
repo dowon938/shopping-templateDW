@@ -1,0 +1,88 @@
+:root {
+  /* color */
+  --color-black: #3f454d;
+  --color-white: #ffffff;
+  --color-blue: #3b88c3;
+  --color-yellow: #fbbe28;
+  --color-pink: #fd7f84;
+  --color-light-grey: #dfdfdf;
+}
+
+* {
+  box-sizing: border-box;
+}
+body{
+  margin: auto;
+  text-align: center;
+  background-color: #3f454d;
+}
+button{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+
+
+.shopping__container{
+  margin-top: 60px;
+  display: flex;
+  flex-flow: column;
+}
+.categories{
+  display: flex;
+  margin: auto;
+}
+.categories__clothes button{
+  margin: 0px 14px;
+}
+.categories__clothes{
+  display: flex;
+}
+.categories__clothes img{
+  width: 40px;
+  height: 40px;
+}
+.categories__colors{
+  display: flex;
+}
+.categories__colors button{
+  margin: 4px;
+  padding: 6px 10px;
+  height: 36px;
+}
+.colors__blue{
+  background-color: #3b88c3;
+}
+.colors__yellow{
+  background-color: #fbbe28;
+}
+.colors__pink{
+  background-color: #fd7f84;
+}
+.item-window{
+  background-color: rgb(1, 1, 1, 0.1);
+  border-radius: 6px;
+  width: 400px;
+  height: 500px;
+  margin: auto;
+  margin-top: 36px;
+  overflow: auto;
+  display: flex;
+  flex-flow: column;
+}
+.item-window div {
+  display: flex;
+  margin: 4px 0px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 6px;
+  align-items: center;
+}
+.item-window div img {
+  margin: 4px 14px;
+  width: 40px;
+  height: 40px;
+}
