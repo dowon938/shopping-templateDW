@@ -6,15 +6,21 @@
   --color-yellow: #fbbe28;
   --color-pink: #fd7f84;
   --color-light-grey: #dfdfdf;
+
+  /* size */
+  --btn-size: 40px;
+  /* annimations */
+  --annimations-duration: 250ms;
 }
 
 * {
   box-sizing: border-box;
 }
 body{
+  height: 100vh;
   margin: auto;
   text-align: center;
-  background-color: #3f454d;
+  background-color: var(--color-black);
 }
 button{
   border: none;
@@ -22,6 +28,10 @@ button{
   background-color: transparent;
   cursor: pointer;
   padding: 0;
+  transition: all var(--annimations-duration) ease-in-out;
+}
+button:hover{
+  transform: scale(1.1);
 }
 ::-webkit-scrollbar{
   width: 6px;
@@ -33,7 +43,10 @@ button{
 }
 
 
-
+.logo{
+  width: fit-content;
+  margin: auto;
+}
 .shopping__container{
   margin-top: 60px;
   display: flex;
@@ -44,21 +57,24 @@ button{
   margin: auto;
 }
 .clothes__t-shirts{
-  margin-right: 14px;
+  margin-right: 10px;
 }
 .clothes__pants,
 .clothes__skirts{
-  margin: 0px 14px;
+  margin: 0px 10px;
 }
 .categories__clothes{
   display: flex;
 }
 .categories__clothes img{
-  width: 40px;
-  height: 40px;
+  width: var(--btn-size);
+  height: var(--btn-size);
 }
 .categories__colors{
   display: flex;
+}
+.categories__colors button{
+  border-radius: 2px;
 }
 .categories__colors button{
   margin: 4px;
@@ -66,13 +82,13 @@ button{
   height: 36px;
 }
 .colors__blue{
-  background-color: #3b88c3;
+  background-color: var(--color-blue);
 }
 .colors__yellow{
-  background-color: #fbbe28;
+  background-color: var(--color-yellow);
 }
 .colors__pink{
-  background-color: #fd7f84;
+  background-color: var(--color-pink);
 }
 .item-window{
   background-color: rgb(1, 1, 1, 0.1);
@@ -90,7 +106,7 @@ button{
   display: flex;
   margin: 4px 0px;
   width: 100%;
-  background-color: #ffffff;
+  background-color: var(--color-white);
   border-radius: 6px;
   align-items: center;
 }
