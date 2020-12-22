@@ -1,44 +1,47 @@
-'use strict';
-const shoppingContainer = document.querySelector('.shopping__container');
-const categories = document.querySelector('.categories');
+"use strict";
 
-const itemWindow = document.querySelector('.item-window');
-const allItemInWidow = document.querySelectorAll('.item-window div');
-const allTshirts = document.querySelectorAll('.t-shirts');
-const allPants = document.querySelectorAll('.pants');
-const allSkirts = document.querySelectorAll('.skirts');
-const allBlue = document.querySelectorAll('.blue');
-const allYellow = document.querySelectorAll('.yellow');
-const allPink = document.querySelectorAll('.pink');
+loadItems();
 
-shoppingContainer.addEventListener('click',(event)=>{
+const shoppingContainer = document.querySelector(".shopping__container");
+const categories = document.querySelector(".categories");
+
+const itemWindow = document.querySelector(".item-window");
+const allItemInWidow = document.querySelectorAll(".item-window div");
+const allTshirts = document.querySelectorAll(".t-shirts");
+const allPants = document.querySelectorAll(".pants");
+const allSkirts = document.querySelectorAll(".skirts");
+const allBlue = document.querySelectorAll(".blue");
+const allYellow = document.querySelectorAll(".yellow");
+const allPink = document.querySelectorAll(".pink");
+
+shoppingContainer.addEventListener("click", (event) => {
   const target = event.target;
   switch (target.className || target.parentNode.className) {
-    case 'clothes__t-shirts':
+    case "clothes__t-shirts":
       allItemHide();
       flexItem(allTshirts);
       break;
-    case 'clothes__pants':
+    case "clothes__pants":
       allItemHide();
       flexItem(allPants);
       break;
-    case 'clothes__skirts':
+    case "clothes__skirts":
       allItemHide();
       flexItem(allSkirts);
       break;
-    case 'colors__blue':
+    case "colors__blue":
       allItemHide();
       flexItem(allBlue);
       break;
-    case 'colors__yellow':
+    case "colors__yellow":
       allItemHide();
       flexItem(allYellow);
       break;
-    case 'colors__pink':
+    case "colors__pink":
       allItemHide();
       flexItem(allPink);
       break;
-    case 'logo':
+    case "logo":
       allItemHide();
       flexItem(allItemInWidow);
       break;
@@ -50,13 +53,13 @@ shoppingContainer.addEventListener('click',(event)=>{
 });
 
 function allItemHide() {
-  allItemInWidow.forEach(element => {
-    element.style.display = 'none';
+  allItemInWidow.forEach((element) => {
+    element.style.display = "none";
   });
-};
+}
 
 function flexItem(item) {
-  item.forEach(element => {
-    element.style.display = 'flex';
+  item.forEach((element) => {
+    element.style.display = "flex";
   });
 }
