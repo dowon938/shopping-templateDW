@@ -5,34 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Online Shopping</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="src/main.js" defer></script>
+    <script src="src/ellie.js" defer></script>
   </head>
   <body>
     <div class="shopping__container">
-      <button class="logo"><img src="img/logo.png" alt=""></button>
+      <button class="logo">
+        <img src="img/logo.png" alt="" />
+      </button>
       <div class="categories">
         <div class="categories__clothes">
-          <button class="clothes__t-shirts"><img src="img/blue_t.png" alt=""></button>
-          <button class="clothes__pants"><img src="img/blue_p.png" alt=""></button>
-          <button class="clothes__skirts"><img src="img/blue_s.png" alt=""></button>
+          <button class="clothes__t-shirts">
+            <img
+              src="img/blue_t.png"
+              alt="tshirts"
+              data-key="type"
+              data-value="tshirts"
+            />
+          </button>
+          <button class="clothes__pants">
+            <img
+              src="img/blue_p.png"
+              alt="pants"
+              data-key="type"
+              data-value="pants"
+            />
+          </button>
+          <button class="clothes__skirts">
+            <img
+              src="img/blue_s.png"
+              alt="skirts"
+              data-key="type"
+              data-value="skirts"
+            />
+          </button>
         </div>
         <div class="categories__colors">
-          <button class="colors__blue">Blue</button>
-          <button class="colors__yellow">Yellow</button>
-          <button class="colors__pink">Pink</button>
+          <button class="colors__blue" data-key="color" data-value="blue">
+            Blue
+          </button>
+          <button class="colors__yellow" data-key="color" data-value="yellow">
+            Yellow
+          </button>
+          <button class="colors__pink" data-key="color" data-value="pink">
+            Pink
+          </button>
         </div>
       </div>
-      <div class="item-window">
-        <div class="pants blue"><img src="img/blue_p.png" alt="">male, small size</div>
-        <div class="skirts blue"><img src="img/blue_s.png" alt="">female, small size</div>
-        <div class="t-shirts blue"><img src="/img/blue_t.png" alt="">male, small size</div>
-        <div class="pants yellow"><img src="/img/yellow_p.png" alt="">male, small size</div>
-        <div class="skirts yellow"><img src="/img/yellow_s.png" alt="">female, small size</div>
-        <div class="t-shirts yellow"><img src="/img/yellow_t.png" alt="">male, small size</div>
-        <div class="pants pink"><img src="/img/pink_p.png" alt="">male, small size</div>
-        <div class="skirts pink"><img src="/img/pink_s.png" alt="">female, small size</div>
-        <div class="t-shirts pink"><img src="/img/pink_t.png" alt="">male, small size</div>
-      </div>  
+      <ul class="items"></ul>
     </div>
   </body>
 </html>

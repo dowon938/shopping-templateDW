@@ -1,12 +1,10 @@
 "use strict";
 
-loadItems();
-
 const shoppingContainer = document.querySelector(".shopping__container");
 const categories = document.querySelector(".categories");
 
-const itemWindow = document.querySelector(".item-window");
-const allItemInWidow = document.querySelectorAll(".item-window div");
+const itemWindow = document.querySelector(".items");
+const allItemInWidow = document.querySelectorAll(".items div");
 const allTshirts = document.querySelectorAll(".t-shirts");
 const allPants = document.querySelectorAll(".pants");
 const allSkirts = document.querySelectorAll(".skirts");

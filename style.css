@@ -16,13 +16,13 @@
 * {
   box-sizing: border-box;
 }
-body{
+body {
   height: 100vh;
   margin: auto;
   text-align: center;
   background-color: var(--color-black);
 }
-button{
+button {
   border: none;
   outline: none;
   background-color: transparent;
@@ -30,79 +30,78 @@ button{
   padding: 0;
   transition: all var(--annimations-duration) ease-in-out;
 }
-button:hover{
+button:hover {
   transform: scale(1.1);
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 6px;
   border-radius: 4px;
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: dimgray;
   border-radius: 4px;
 }
 
-
-.logo{
+.logo {
   width: fit-content;
   margin: auto;
 }
-.shopping__container{
+.shopping__container {
   margin-top: 60px;
   display: flex;
   flex-flow: column;
 }
-.categories{
+.categories {
   display: flex;
   margin: auto;
 }
-.clothes__t-shirts{
+.clothes__t-shirts {
   margin-right: 10px;
 }
 .clothes__pants,
-.clothes__skirts{
+.clothes__skirts {
   margin: 0px 10px;
 }
-.categories__clothes{
+.categories__clothes {
   display: flex;
 }
-.categories__clothes img{
+.categories__clothes img {
   width: var(--btn-size);
   height: var(--btn-size);
 }
-.categories__colors{
+.categories__colors {
   display: flex;
 }
-.categories__colors button{
+.categories__colors button {
   border-radius: 2px;
 }
-.categories__colors button{
+.categories__colors button {
   margin: 4px;
   padding: 6px 10px;
   height: 36px;
 }
-.colors__blue{
+.colors__blue {
   background-color: var(--color-blue);
 }
-.colors__yellow{
+.colors__yellow {
   background-color: var(--color-yellow);
 }
-.colors__pink{
+.colors__pink {
   background-color: var(--color-pink);
 }
-.item-window{
+.items {
   background-color: rgb(1, 1, 1, 0.1);
   border-radius: 6px;
   width: 380px;
   height: 460px;
   margin: auto;
+  padding-left: 0;
   margin-top: 36px;
   overflow: auto;
   display: flex;
   flex-flow: column;
-  
 }
-.item-window div {
+.items li {
   display: flex;
   margin: 4px 0px;
   width: 100%;
@@ -110,7 +109,7 @@ button:hover{
   border-radius: 6px;
   align-items: center;
 }
-.item-window div img {
+.items li img {
   margin: 4px 14px;
   width: 40px;
   height: 40px;
