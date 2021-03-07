@@ -1,16 +1,16 @@
-"use strict";
+'use strict';
 
 //Fetch the items from the JSON file
 function loadItems() {
-  return fetch("data/data.json")
+  return fetch('data/data.json')
     .then((response) => response.json())
     .then((jason) => jason.items);
 }
 
 //Update the list with the given items
 function displayItems(items) {
-  const container = document.querySelector(".items");
-  container.innerHTML = items.map((item) => createHTML(item)).join("");
+  const container = document.querySelector('.items');
+  container.innerHTML = items.map((item) => createHTML(item)).join('');
 }
 
 //Create HTML List item from the given data item
@@ -46,10 +46,10 @@ function onButtonClick(event, items) {
 //   });
 // }
 function setEventListeners(items) {
-  const logoBtn = document.querySelector(".logo");
-  const categories = document.querySelector(".categories");
-  logoBtn.addEventListener("click", () => displayItems(items));
-  categories.addEventListener("click", (event) => onButtonClick(event, items));
+  const logoBtn = document.querySelector('.logo');
+  const categories = document.querySelector('.categories');
+  logoBtn.addEventListener('click', () => displayItems(items));
+  categories.addEventListener('click', (event) => onButtonClick(event, items));
 }
 
 //main
